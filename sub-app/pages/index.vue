@@ -1,6 +1,6 @@
 <template>
   <div class="subapp">
-    MY GREAT SUB APP
+    MY GREAT SUBAPP
   </div>
 </template>
 

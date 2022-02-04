@@ -13,11 +13,8 @@ export default {
     loadedCallback: (globalName) => `_on${_.capitalize(globalName)}Loaded`,
   },
   mode: "spa",
-  /*
-   ** Headers of the page
-   */
   router: {
-    mode: "hash",
+    mode: "hash"
   },
 
   buildModules: ["@nuxtjs/eslint-module"],
