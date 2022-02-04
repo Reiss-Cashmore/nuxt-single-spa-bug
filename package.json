@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-single-spa-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sub-app": "cd sub-app && npm i && npm run generate && cp -R ./dist ../main-app/sub-app",
+    "run-main-app": "cd main-app && npm i && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reiss-Cashmore/nuxt-single-spa-bug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reiss-Cashmore/nuxt-single-spa-bug/issues"
+  },
+  "homepage": "https://github.com/Reiss-Cashmore/nuxt-single-spa-bug#readme"
+}
