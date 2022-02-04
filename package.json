@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-sub-app": "cd sub-app && npm i && npm run generate && cp -R ./dist ../main-app/sub-app",
-    "run-main-app": "cd main-app && npm i && npm run dev",
+    "build-sub-app": "npm run clean ; cd sub-app && npm i && npm run generate && cp -R ./dist ../main-app/sub-app",
+    "clean": "rm -R ./main-app/sub-app",
+    "start-main-app": "cd main-app && npm i && npm run dev",
+    "start": "npm run build-sub-app ; npm run start-main-app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
